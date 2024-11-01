@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: helloworld-pod
+spec:
+  containers:
+    - name: test-container
+      image: alpine:latest
+      command: ["/bin/sh", "-c"]
+      args:
+        - while true; do echo "$(date) - Hello World Again!!!"; sleep 30; done
