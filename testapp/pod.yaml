@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: test-container
-      image: alpine:latest
+      image: alpine:latest2
       command: ["/bin/sh", "-c"]
       args:
         - while true; do echo "$(date) - Hello World Again!!!"; sleep 30; done
